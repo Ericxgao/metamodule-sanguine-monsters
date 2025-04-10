@@ -1,0 +1,56 @@
+{
+    "MetaModulePluginMaintainer": "oksami",
+    "MetaModulePluginMaintainerEmail": "itsoksami@gmail.com",
+    "MetaModulePluginMaintainerUrl": "https://github.com/Ericxgao/metamodule-sanguine-monsters",
+    "MetaModuleDescription": "Sanguine Monsters for MetaModule",
+    "MetaModuleIncludedModules": [
+        {
+            "slug": "Sanguine-SuperSwitch81",
+            "name": "Hydra"
+        },
+        {
+            "slug": "Sanguine-SuperSwitch18",
+            "name": "Gegenees"
+        },
+        {
+            "slug": "Sanguine-Monsters-Oraculus",
+            "name": "Oraculus"
+        },
+        {
+            "slug": "Sanguine-Monsters-Raiju",
+            "name": "Raiju"
+        },
+        {
+            "slug": "Sanguine-Monsters-Sphinx",
+            "name": "Sphinx"
+        },
+        {
+            "slug": "Sanguine-Monsters-Bukavac",
+            "name": "Bukavac"
+        },
+        {
+            "slug": "Sanguine-Monsters-Dungeon",
+            "name": "Dungeon"
+        },
+        {
+            "slug": "Sanguine-Kitsune",
+            "name": "Kitsune"
+        },
+        {
+            "slug": "Sanguine-Oubliette",
+            "name": "Oubliette"
+        },
+        {
+            "slug": "Sanguine-Medusa",
+            "name": "Medusa"
+        },
+        {
+            "slug": "Sanguine-Aion",
+            "name": "Aion"
+        },
+        {
+            "slug": "Sanguine-Werewolf",
+            "name": "Werewolf"
+        },
+    ]
+}
