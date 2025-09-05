@@ -28,8 +28,8 @@ set(SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/SanguineMonsters)
 add_library(SanguineMonsters STATIC)
 
 # Compiler definitions
-target_compile_definitions(SanguineMonsters PRIVATE 
-    __V1x 
+target_compile_definitions(SanguineMonsters PRIVATE
+    __V1x
     __PLUGIN
     $<$<BOOL:${BUILD_VIRTUAL}>:BUILD_VIRTUAL>
     _MB_CAPABLE=1
@@ -53,27 +53,35 @@ target_link_options(SanguineMonsters PRIVATE
 )
 
 target_sources(SanguineMonsters PRIVATE
-    ${SOURCE_DIR}/src/sanguinecomponents.cpp
-    ${SOURCE_DIR}/src/sanguinehelpers.cpp
-    ${SOURCE_DIR}/src/themes.cpp
+    ${SOURCE_DIR}/SanguineModulesCommon/src/sanguinecomponents.cpp
+    ${SOURCE_DIR}/SanguineModulesCommon/src/sanguinehelpers.cpp
+    ${SOURCE_DIR}/SanguineModulesCommon/src/themes.cpp
     ${SOURCE_DIR}/src/plugin.cpp
+	${SOURCE_DIR}/src/aion.cpp
+	${SOURCE_DIR}/src/alchemist.cpp
+	${SOURCE_DIR}/src/brainz.cpp
     ${SOURCE_DIR}/src/bukavac.cpp
+	${SOURCE_DIR}/src/chronos.cpp
+	${SOURCE_DIR}/src/dollyx.cpp
     ${SOURCE_DIR}/src/dungeon.cpp
+	${SOURCE_DIR}/src/fortuna.cpp
     ${SOURCE_DIR}/src/kitsune.cpp
     ${SOURCE_DIR}/src/medusa.cpp
+	${SOURCE_DIR}/src/monstersblank.cpp
     ${SOURCE_DIR}/src/oraculus.cpp
+	${SOURCE_DIR}/src/oubliette.cpp
+	${SOURCE_DIR}/src/raiju.cpp
     ${SOURCE_DIR}/src/sphinx.cpp
-    ${SOURCE_DIR}/src/werewolf.cpp
-    ${SOURCE_DIR}/src/aion.cpp
     ${SOURCE_DIR}/src/superswitch18.cpp
     ${SOURCE_DIR}/src/superswitch81.cpp
-    ${SOURCE_DIR}/src/oubliette.cpp
+	${SOURCE_DIR}/src/werewolf.cpp
 )
 
 # Include directories
-target_include_directories(SanguineMonsters PRIVATE 
+target_include_directories(SanguineMonsters PRIVATE
+    ${SOURCE_DIR}/SanguineModulesCommon/src
     ${SOURCE_DIR}/src
-    ${SOURCE_DIR}/pcg
+    ${SOURCE_DIR}/SanguineModulesCommon/pcgcpp
 )
 
 # Create the plugin
@@ -83,4 +91,4 @@ create_plugin(
     PLUGIN_JSON     ${SOURCE_DIR}/plugin.json
     SOURCE_ASSETS   ${CMAKE_CURRENT_LIST_DIR}/assets
     DESTINATION     ${CMAKE_CURRENT_LIST_DIR}/metamodule-plugins
-) 
+)

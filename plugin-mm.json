@@ -12,13 +12,29 @@
             "slug": "Sanguine-SuperSwitch18",
             "name": "Gegenees"
         },
+		{
+            "slug": "Sanguine-Monsters-Blank",
+            "name": "Sanguine Monsters Blank"
+        },
+		{
+            "slug": "Sanguine-Monsters-Dolly-X",
+            "name": "Dolly-X"
+        },
         {
             "slug": "Sanguine-Monsters-Oraculus",
             "name": "Oraculus"
         },
+		{
+            "slug": "Sanguine-Monsters-Raiju",
+            "name": "Raiju"
+        },
         {
             "slug": "Sanguine-Monsters-Sphinx",
             "name": "Sphinx"
+        },
+		{
+            "slug": "Sanguine-Monsters-Brainz",
+            "name": "Brainz"
         },
         {
             "slug": "Sanguine-Monsters-Bukavac",
@@ -47,6 +63,18 @@
         {
             "slug": "Sanguine-Werewolf",
             "name": "Werewolf"
+        },
+		{
+            "slug": "Sanguine-Alchemist",
+            "name": "Alchemist"
+        },
+		{
+            "slug": "Sanguine-Monsters-Chronos",
+            "name": "Chronos"
+        },
+		{
+            "slug": "Sanguine-Fortuna",
+            "name": "Fortuna"
         }
     ]
 }
